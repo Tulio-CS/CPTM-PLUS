@@ -1,114 +1,118 @@
-/* Base styles - reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
 @font-face {
     font-family: Inter;
     src: url(../../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-html, body {
-    height: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     background-color: #F6F6F6;
 }
 
-/* Styles for mobile devices */
-@media only screen and (max-width: 768px) {
-    header { 
-        margin-top: 7vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        height: 90px;
-        justify-content: center;
-    }
 
-    nav {
-        padding-top: 2vh;
-        padding-left: 3vh;
-        padding-bottom: 2vh;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    nav img {
-        height: 5vh;
-        padding-right: 3vh;
-    }
-
-    nav p {
-        font-family: Inter;
-    }
-
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    main p {
-        font-family: Inter;
-        color: #EE3338;
-        font-size: medium;
-        align-items: center;
-    }
-
-    main img {
-        height: 5vh;
-        padding-bottom: 1vh;
-    }
-
-    main principal {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    main principal div { 
-        background-color: white;
-        width: 40vw;
-        height: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    main secundario {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: 3vh;
-    }
-
-    main secundario div { 
-        background-color: white;
-        width: 25vw;
-        height: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-    }
+a {
+    text-decoration: none;
 }
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    height: 5%; /* Adjust as needed */
+}
+
+
+.overlay {
+    position: relative;
+    bottom: 0; /* Sticks the overlay to the bottom of the container */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; /* 80% of the container's width */
+    height: 15%; /* Adjust the height as needed */
+    background-color: #424242; /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Higher than iframe */
+    border-radius: 20px; /* Optional: rounded corners */
+    margin-top: -15%;
+}
+
+.overlay .pesquisa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+main principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main principal div { 
+    background-color: #3395EE;
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+main img {
+    height: 70%;
+}
+
+main secundario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3vh;
+}
+
+main secundario div { 
+    background-color: #a468e9;
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
