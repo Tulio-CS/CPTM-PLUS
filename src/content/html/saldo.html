@@ -1,51 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
+    <title>Página de Saldo</title>
     <link rel="stylesheet" href="../css/saldo.css">
 </head>
-
-
 <body>
-    <header>
-        <img src="../../assets/img/cptm.svg" alt="">
-    </header>
-    
-    <div class="home">
-        <a href="index.html">
-            <img src="../../assets/icons/back.svg" alt="">
-        </a>
-    </div>
-    
-    <nav>
-        <p style="display: flex; justify-content: left;">
-            <b>Seu saldo:</b>
-        </p>
-        <p style="display: flex; justify-content: right; font-size: 200%;">
-            <b>R$20,00</b>
-        </p>
-    </nav>
-
-    <main>
-        <div class="pix">
-            <img src="../../assets/icons/pix.svg">
+    <div class="container-saldo">
+        <div class="logo-container">
+            <img class="logocptm" src="../../assets/icons/cptmRecarregar.svg" alt="Logo CPTM">
         </div>
 
-        <div class="text">
-            <p>
-                <b>Valor mínimo: R$10,00</b>
-            </p>
-
-            <p>
-                <b>Valor maximo: R$650,00</b>
-            </p>
+        <div class="saldo-section">
+            <p><b>Seu saldo:</b></p>
+            <h1><b>R$20,00</b></h1>
         </div>
-    </main>
 
-    <div class="card">
-        <img src="../../assets/icons/newCard.svg" alt="">
+        <div class="pix-section">
+            <div class="pix-container">
+                <img src="../../assets/icons/pix.svg" alt="">
+                
+                <span><b>Valor mínimo: R$10,00</b></span>
+                <span><b>Valor máximo: R$650,00</b></span>
+            </div>
+        </div>
+
+        <!-- Botão de cadastrar novo cartão -->
+        <button class="btn-cadastrar-cartao"><b>Cadastrar novo cartão</b></button>
+
+        <button class="btn-voltar" onclick="window.location.href='../html/home.html'"><b>Voltar</b></button>
     </div>
 </body>
 </html>
